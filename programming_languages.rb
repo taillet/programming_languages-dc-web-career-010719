@@ -26,7 +26,7 @@ narray.each do |lang|
   if new_hash[lang][:style] == [:oo]
     new_hash[lang][:style] = [:oo, :functional]
   else
-  new_hash[lang][:style] = [:functional]
+  new_hash[lang].merge(:style => [:functional])
 end
 end
  puts new_hash
