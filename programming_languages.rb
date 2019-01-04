@@ -23,11 +23,11 @@ end
 end
 
 narray.each do |lang|
-  if new_hash[lang][:style] == [:oo]
+  if array.include?(lang) == true
     new_hash[lang][:style] = [:oo, :functional]
   else
-  new_hash[lang].merge(:style => [:functional])
+  new_hash[lang][:style] = [:functional]
 end
 end
- puts new_hash
+ new_hash
 end
