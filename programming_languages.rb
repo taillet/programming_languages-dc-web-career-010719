@@ -29,5 +29,5 @@ narray.each do |lang|
   new_hash[lang][:style] = [:functional]
 end
 end
- new_hash
+ puts new_hash
 end
