@@ -23,7 +23,7 @@ end
 end
 
 narray.each do |lang|
-  if lang == :javascript
+  if array.include?(lang) == true
     new_hash[lang][:style] = [:oo, :functional]
   else
   new_hash[lang][:style] = [:functional]
