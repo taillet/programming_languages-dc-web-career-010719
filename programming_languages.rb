@@ -23,7 +23,7 @@ end
 end
 
 narray.each do |lang|
-  if new_hash[lang][:style].has_value?([:oo]) == true
+  if new_hash[lang][:style].empty? == false
     new_hash[lang][:style] = [:oo, :functional]
   else
   new_hash[lang][:style] = [:functional]
